@@ -1,0 +1,62 @@
+// RecipeForm.module.scss
+
+.recipeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.recipeForm input,
+.recipeForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.recipeForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.recipeForm button:hover {
+    background-color: #0056b3;
+}
+
+.recipeForm .contentList {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.recipeForm .contentList li {
+    margin-bottom: 5px;
+}
+
+/* Exemple de mise en page responsive pour RecipeForm */
+@media screen and (max-width: 600px) {
+    .recipeForm {
+        padding: 10px;
+    }
+
+    .recipeForm input,
+    .recipeForm textarea {
+        margin-bottom: 5px;
+    }
+
+    .recipeForm button {
+        padding: 8px 16px;
+    }
+
+    .recipeForm .contentList li {
+        margin-bottom: 3px;
+    }
+}
